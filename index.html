@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Terima Kasih</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .thank-you {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none; /* Hide initially */
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showThankYou()">Klik di sini untuk melihat ucapan terima kasih</button>
+
+    <div class="thank-you" id="thankYouMessage">
+        <h1>Terima Kasih, Maryam!</h1>
+        <p>Terima kasih banyak atas bantuanmu dalam mengerjakan PR saya. Dukungan dan kesabaranmu sangat berarti bagi saya. Semoga kebaikanmu selalu dibalas dengan kebaikan yang berlipat ganda. Terima kasih, Maryam!</p>
+    </div>
+
+    <script>
+        function showThankYou() {
+            document.getElementById('thankYouMessage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
